@@ -215,6 +215,13 @@ VALUES (46,
         1,
         '3:30');
 
+
+INSERT INTO public.appointments
+VALUES (59,
+        62,
+        1,
+        '7am');
+
 --
 -- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
@@ -224,45 +231,51 @@ VALUES (16,
         '666-666-6666',
         'Fishy');
 
+
+INSERT INTO public.customers
+VALUES (62,
+        '111-111-1111',
+        'Ham');
+
 --
 -- Data for Name: services; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
 INSERT INTO public.services
 VALUES (1,
-        'Cut');
+        'cut');
 
 
 INSERT INTO public.services
 VALUES (2,
-        'Color');
+        'color');
 
 
 INSERT INTO public.services
 VALUES (3,
-        'Cut and Color');
+        'cut and color');
 
 
 INSERT INTO public.services
 VALUES (4,
-        'Perm');
+        'perm');
 
 
 INSERT INTO public.services
 VALUES (5,
-        'Style');
+        'style');
 
 --
 -- Name: appointments_appointment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 52, true);
+SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 83, true);
 
 --
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 56, true);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 82, true);
 
 --
 -- Name: services_service_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
